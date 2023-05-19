@@ -1,0 +1,81 @@
+/****VARIABLES****/
+
+/****IMPORT****/
+@import 'variables/variables';
+@import 'mixin/mixin';
+@import 'extend/extend';
+@import 'base/base';
+
+@font-face {
+    font-family: AbrilFatface;
+    src: url(./FONT/Abril_Fatface.zip);
+   } 
+
+//RESET//
+*{
+    margin:0;
+    padding:0;
+    
+
+}
+
+/******COVERSHEET******/
+
+
+.firstpage{
+    @extend %coverSheetSize;
+}
+//title
+
+.coversheet__title{
+    @extend %coverSheetTitle;
+}
+
+//summary
+.summary{
+    @extend %summary;
+}
+.list{
+    @extend %summaryList;
+    li{
+        @extend %summaryList;
+    }
+}
+
+/******I.PRESENTATION PROJET*******/
+//title
+.medium__title{
+    @extend %mediumTitlte;
+}
+.small__title{
+    @extend %smallTitle;
+}
+.small__title__secondary{
+    @extend %smallTitleSecondary;
+}
+//content
+.paragraphe{
+    @extend %contentPart;
+}
+
+.parargraphe__style{
+    @extend %textShape;
+
+//partie 1.4
+}
+.article__reseau{
+    @extend %socialArticle;
+}
+img{
+    width:80px;
+    height:80px;
+}
+.display__logo{
+   @extend %socialTitle;
+}
+.link__article__reseau{
+    @extend %linkArticle;
+}
+a{
+    margin:15px;
+}
