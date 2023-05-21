@@ -24,6 +24,10 @@
 
 .firstpage{
     @extend %coverSheetSize;
+    img{
+        width:40%;
+        height:80%;
+    }
 }
 //title
 
@@ -65,11 +69,12 @@
 }
 .article__reseau{
     @extend %socialArticle;
-}
-img{
+    img{
     width:80px;
     height:80px;
+    }
 }
+
 .display__logo{
    @extend %socialTitle;
 }
@@ -78,4 +83,11 @@ img{
 }
 a{
     margin:15px;
+}
+/******II.Description graphique et ergonomique*******/
+
+//palettes
+.article__color{
+    @extend %articleColor;
+
 }
